@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lavishly+Yours&family=League+Script&family=Liu+Jian+Mao+Cao&family=Meddon&family=Megrim&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&family=Square+Peg&family=Waterfall&display=swap');
+
+.actressPage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    background: url(/white-bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: inherit;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.backgroundTitle {
+    font-size: 100px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: #6b6b6bab;
+}
+
+.act-section-left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.act-section-left video {
+    max-width: 50%;
+}
+
+.act-section-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.projectDetails {
+    margin-bottom: 20px;
+}
+
+.projectTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.projectInfo {
+    font-size: 16px;
+}

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import InstagramPage from "./Instagram";
+import "./actress.css";
 
 export default function Actress() {
   const projects = [
@@ -28,32 +29,33 @@ export default function Actress() {
       link: "",
     },
   ];
-  return (
-    <div>
-      <h1>Acting Portfolio</h1>
-      <div className="act-section-left">
-        <div>
-          {projects.map((project, index) => (
-            <div key={index}>
-              <video controls>
-                <source src={project.video} type="video/mp4" />
-              </video>
-            </div>
-          ))}
-        </div>
 
-        <div className="act-section-right">
-          {projects.map((project, index) => (
-            <div key={index}>
-              <p>{project.year}</p>
-              <h3>{project.title}</h3>
-              <p>{project.director}</p>
-              <p>{project.role}</p>
+  return (
+    <div className="actressPage">
+      
+      <h1 className="backgroundTitle">I Tell Stories</h1>
+
+      <div className="videoSec">
+        {projects.map((project, index) => (
+          <div key={index} className="act-section-left">
+            <video controls>
+              <source src={project.video} type="video/mp4" />
+            </video>
+
+            <div className="act-section-right">
+              <div className="projectDetails">
+                <h3 className="projectTitle">{project.title}</h3>
+                <p className="projectInfo">Director: {project.director}</p>
+                <p className="projectInfo">Year: {project.year}</p>
+                <p className="projectInfo">Role: {project.role}</p>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-      <InstagramPage />
+      <button>
+        <InstagramPage />
+      </button>
     </div>
   );
 }
