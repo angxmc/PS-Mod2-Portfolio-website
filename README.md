@@ -14,7 +14,11 @@ The design of this website focuses on utilizing the 'backdrop-filter' and using 
 The design aims to be minimal and clean. 
 
 
-
+The website is composed of 2 main directories: Software and Acting
+- the software portfolio will feature my completed and renovated apps, that includes freelance projects and in class activities
+- the Acting Portfolio will feature my film reels or links to them and exercises I've done with friends. 
+- Social links will be always visible regardless of the portfolio opened. 
+- the background images also feature theme related to each portfolio. 
 
 ## Versions:
 1. create basic css and used Instagram API (limited access token)

@@ -5,7 +5,7 @@ function InstagramPage() {
   const [media, setMedia] = useState([]);
 
   const accessToken =
-    "IGQWRNTmtVYVRwVnVvSjE3YnJHdmFLcjVERy05bExydzFnOWdmMm41Q3V0QXRJZAVhwU2gxQ3hjb2FUSnREOWFiRERqOTZAsZAWlxYlpUNEEwT2tZAMk5xMTNfV0Qzb1JyR2YzaGxGdHA2R05FbVFTcV9oOG1PYzl1ZAG5SbjhZANVZAjRlNoOG8ZD";
+    "IGQWRQdEwwU2FVSkd1N0FVM1l0UTVrcDdldTFiWXlOdWk2a1QyX1dMcm5md2lobUNBcGl2RDZAobV9TT0wtNzBTYWpGU3ppdWxIMUFOTGhlVjhNZAVhwOW1GLVdWQnpGZAEx2blZAVNkNaaTN2VDNpNGJoTzlONlQ2SDlRbkJ5bUNTNTU2dwZDZD";
 
   const url1 = `https://graph.instagram.com/me/media?fields=id,caption&access_token=${accessToken}`;
 
