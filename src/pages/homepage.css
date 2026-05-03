@@ -161,10 +161,8 @@
 }
 
 @keyframes btnFlow {
-
-    100% {
-        background-position: -400% 0;
-    }
+    0%   { background-position: 0 0; }
+    100% { background-position: -200px 0; }
 }
 
 .btn {
@@ -191,8 +189,9 @@
 }
 
 .btn:hover {
-    background-image: linear-gradient(45deg, #e9692ccc, #ffb95fcc, #90caf9cc, #293d7acc, #ffffffcc);
-    background-size: 200% 200%;
+    background-image: linear-gradient(90deg, #e9692ccc 0%, #ffb95fcc 25%, #90caf9cc 50%, #293d7acc 75%, #e9692ccc 100%);
+    background-size: 200px 100%;
+    background-repeat: repeat-x;
     animation: btnFlow 5s infinite linear;
     transform: scale(1.05);
 }
