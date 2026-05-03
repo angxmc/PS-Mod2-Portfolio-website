@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import InstagramPage from "./Instagram";
 import "./actress.css";
 
@@ -53,9 +52,9 @@ export default function Actress() {
           </div>
         ))}
       </div>
-      <button>
+      <div className="instagram-section">
         <InstagramPage />
-      </button>
+      </div>
     </div>
   );
 }

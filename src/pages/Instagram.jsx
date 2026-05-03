@@ -23,7 +23,6 @@ function InstagramPage() {
   useEffect(() => {
     getData();
   }, []);
-  console.log(data);
 
   useEffect(() => {
     const getMedia = async () => {
@@ -44,7 +43,7 @@ function InstagramPage() {
     };
 
     getMedia();
-  }, [data, accessToken]);
+  }, [data]);
 
   return (
     <div>
@@ -52,7 +51,7 @@ function InstagramPage() {
 
       {media.map((item) => (
         <div key={item.id}>
-          <img src={item.media_url} />
+          <img src={item.media_url} alt={item.caption || "Instagram post"} />
         </div>
       ))}
     </div>

@@ -30,6 +30,21 @@
     transition: 0.5s;
 }
 
+.rightNav a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.rightNav a:hover::after {
+    width: 100%;
+}
+
 .logo {
     position: relative;
     font-weight: 700;
@@ -41,12 +56,15 @@
     transition: 0.6s;
 }
 
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .actress-page .logo {
     color: black;
-   
 }
 
 .actress-page .rightNav a {
     color: black;
-    
 }

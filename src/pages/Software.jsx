@@ -1,4 +1,3 @@
-import React from "react";
 import './software.css'
 
 export default function SoftwareEngineer() {

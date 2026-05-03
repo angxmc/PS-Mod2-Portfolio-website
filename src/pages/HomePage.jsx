@@ -9,7 +9,7 @@ export default function HomePage() {
           <h1>Technology & Logic</h1>
           <h2>Software Engineer</h2>
           <div className="btn">
-            <Link to="/software">Click</Link>
+            <Link to="/software">Explore</Link>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function HomePage() {
           <h1>Creativity & Storytelling</h1>
           <h2>Actress</h2>
           <div className="btn">
-            <Link to="/actress">Click</Link>
+            <Link to="/actress">Explore</Link>
           </div>
         </div>
       </div>
