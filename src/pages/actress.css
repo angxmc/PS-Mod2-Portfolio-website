@@ -6,10 +6,7 @@
     flex-direction: column;
     align-items: center;
     padding: 100px;
-    background: url(/white-bg.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(/white-bg.jpg) no-repeat center center;
     background-size: cover;
     scroll-behavior: local;
     flex-wrap: wrap;
