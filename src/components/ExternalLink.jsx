@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ExternalLink.css";
+import "./externalLink.css";
 
 export default function ExternalLink({ href, children, className }) {
   const [showModal, setShowModal] = useState(false);
