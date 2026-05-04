@@ -45,6 +45,15 @@
     font-weight: bold;
 }
 
+.projectLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projectLink:hover {
+    text-decoration: underline;
+}
+
 .projectInfo {
     font-size: 16px;
 }
