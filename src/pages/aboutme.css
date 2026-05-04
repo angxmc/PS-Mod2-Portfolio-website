@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.aboutPage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/light-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 120px 20px 60px;
+}
+
+.aboutContainer {
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutTitle {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 52px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.aboutDivider {
+    width: 50px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto 40px;
+}
+
+.aboutText {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 2;
+    margin-bottom: 24px;
+}

@@ -4,6 +4,7 @@ import "./App.css";
 import SoftwareEngineer from "./pages/Software";
 import Actress from "./pages/Actress";
 import HomePage from "./pages/HomePage";
+import AboutMe from "./pages/AboutMe";
 import NavBar from "./components/Navbar";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/software" element={<SoftwareEngineer />} />
         <Route path="/actress" element={<Actress />} />
+        <Route path="/about" element={<AboutMe />} />
       </Routes>
 
     </div>

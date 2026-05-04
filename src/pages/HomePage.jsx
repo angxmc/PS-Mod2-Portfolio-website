@@ -20,7 +20,9 @@ export default function HomePage() {
           <h1 className="chineseGreet">你好</h1>
           <h2>Angelina Xueming Chen</h2>
 
-          <p className="btn">About Me</p>
+          <div className="btn">
+            <Link to="/about">About Me</Link>
+          </div>
         </div>
       </div>
 
