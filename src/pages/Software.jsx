@@ -1,4 +1,5 @@
 import './software.css'
+import ExternalLink from '../components/ExternalLink'
 
 export default function SoftwareEngineer() {
   const projects = [
@@ -18,14 +19,9 @@ export default function SoftwareEngineer() {
           <div key={index} className="projectPanel">
             <div className="projectContent">
               <h3 className="projectTitle">
-                <a
-                  className="projectLink"
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <ExternalLink className="projectLink" href={project.link}>
                   {project.title}
-                </a>
+                </ExternalLink>
               </h3>
             </div>
           </div>

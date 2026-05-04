@@ -1,8 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import './navbar.css'
-
-
-
+import ExternalLink from "./ExternalLink";
 
 export default function NavBar() {
    const location = useLocation();
@@ -14,27 +12,17 @@ export default function NavBar() {
       </div>
 
       <div className="rightNav">
-        <a
-          href="https://www.linkedin.com/in/xueming-angelina-chen"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <ExternalLink href="https://www.linkedin.com/in/xueming-angelina-chen">
           LinkedIn
-        </a>
-        <a
-          href="https://github.com/angxmc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </ExternalLink>
+        <ExternalLink href="https://github.com/angxmc">
           GitHub
-        </a>
-        <a
-          href="https://www.instagram.com/angelinaxmchen/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
+        </ExternalLink>
+        {isActressPage && (
+          <ExternalLink href="https://www.instagram.com/angelinaxmchen/">
+            Instagram
+          </ExternalLink>
+        )}
         <a href="#">Contact</a>
       </div>
     </nav>

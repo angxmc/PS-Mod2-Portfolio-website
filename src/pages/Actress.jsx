@@ -1,5 +1,6 @@
 import InstagramPage from "./Instagram";
 import "./actress.css";
+import ExternalLink from "../components/ExternalLink";
 
 export default function Actress() {
   const projects = [
@@ -18,11 +19,18 @@ export default function Actress() {
       link: "",
     },
     {
-      title: "Reel Exercise",
+      title: "Clip: The Power of Suggestion",
       director: "Shuyao Chen",
       year: 2021,
-      role: "Daughter",
-      link: "",
+      role: "Lead",
+      link: "https://vimeo.com/513587308?share=copy",
+    },
+    {
+      title: "Clip: The Flow",
+      director: "Shuyao Chen",
+      year: 2021,
+      role: "Lead",
+      link: "https://vimeo.com/549459704?share=copy",
     },
   ];
 
@@ -35,9 +43,10 @@ export default function Actress() {
         {projects.map((project, index) => (
           <div key={index} className="projectDetails">
             <h3 className="projectTitle">
-              <a className="projectLink" href={project.link || "#"}>
-                {project.title}
-              </a>
+              {project.link
+                ? <ExternalLink className="projectLink" href={project.link}>{project.title}</ExternalLink>
+                : <span className="projectLink">{project.title}</span>
+              }
             </h3>
             <p className="projectInfo">Director: {project.director}</p>
             <p className="projectInfo">Year: {project.year}</p>
