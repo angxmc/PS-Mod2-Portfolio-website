@@ -8,7 +8,7 @@ export default function Actress() {
       director: "Fernando Frias",
       year: 2017,
       role: "Lin",
-      link: "",
+      link: "https://www.netflix.com/title/81025595",
     },
     {
       title: "Daughter",
@@ -28,7 +28,7 @@ export default function Actress() {
 
   return (
     <div className="actressPage">
-      
+
       <h1 className="backgroundTitle">I Tell Stories</h1>
 
       <div className="videoSec">
