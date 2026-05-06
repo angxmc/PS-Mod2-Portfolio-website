@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="content">
           <h1 className="engGreet">Hello</h1>
           <h1 className="chineseGreet">你好</h1>
-          <h2>Angelina Xueming Chen</h2>
+          
 
           <div className="btn">
             <Link to="/about">About Me</Link>

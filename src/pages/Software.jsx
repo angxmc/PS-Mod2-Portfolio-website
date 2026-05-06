@@ -14,6 +14,15 @@ export default function SoftwareEngineer() {
     <div className="softwarePage">
       <h1 className="softwareTitle-left">Hello</h1>
       <h1 className="softwareTitle-right">World</h1>
+      <a
+        className="resumeBtn"
+        href="/Resume_Angelina_Chen_Engineer.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Resume
+      </a>
+
       <div className="projectPanels">
         {projects.map((project, index) => (
           <div key={index} className="projectPanel">

@@ -6,8 +6,8 @@ export default function AboutMe() {
       <div className="aboutContainer">
         <h1 className="aboutTitle">Angelina Chen</h1>
         <div className="aboutDivider" />
-        <p className="aboutText">Your story goes here.</p>
-        <p className="aboutText">Another paragraph goes here.</p>
+        <p className="aboutText">About Me</p>
+        <p className="aboutText">To be written..</p>
       </div>
     </div>
   )

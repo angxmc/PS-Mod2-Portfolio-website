@@ -39,7 +39,7 @@ export default function Actress() {
 
       <h1 className="backgroundTitle">I Tell Stories</h1>
 
-      <div className="videoSec">
+      <div className="actressCard">
         {projects.map((project, index) => (
           <div key={index} className="projectDetails">
             <h3 className="projectTitle">
@@ -53,9 +53,9 @@ export default function Actress() {
             <p className="projectInfo">Role: {project.role}</p>
           </div>
         ))}
-      </div>
-      <div className="instagram-section">
-        <InstagramPage />
+        <div className="instagram-section">
+          <InstagramPage />
+        </div>
       </div>
     </div>
   );

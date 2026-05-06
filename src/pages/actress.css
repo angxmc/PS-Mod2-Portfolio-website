@@ -16,28 +16,55 @@
 .backgroundTitle {
     font-size: 100px;
     font-family: 'Liu Jian Mao Cao', cursive;
-    color: #6b6b6bab;
+    color: #2c2c2c;
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.act-section-left {
-    display: flex;
-    align-items: flex-start;
-}
-
-.act-section-left video {
-    max-width: 50%;
-}
-
-.act-section-right {
+.actressCard {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 20px;
+    gap: 20px;
 }
 
 .projectDetails {
-    margin-bottom: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 10px 10px 30px rgba(52, 52, 52, 0.1);
+    padding: 28px 56px;
+    overflow: hidden;
+}
+
+.projectDetails::before,
+.projectDetails::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 24px;
+    background-color: rgba(20, 20, 20, 0.25);
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 5px,
+        rgba(255, 255, 255, 0.35) 5px,
+        rgba(255, 255, 255, 0.35) 14px,
+        transparent 14px,
+        transparent 22px
+    );
+}
+
+.projectDetails::before {
+    left: 0;
+}
+
+.projectDetails::after {
+    right: 0;
 }
 
 .projectTitle {

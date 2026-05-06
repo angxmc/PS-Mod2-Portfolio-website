@@ -19,6 +19,31 @@
 
 
 
+.resumeBtn {
+    display: inline-block;
+    padding: 10px 32px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #a0aec0;
+    background: rgba(90, 100, 120, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(90, 100, 120, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, backdrop-filter 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.resumeBtn:hover {
+    background: rgba(90, 100, 120, 0.4);
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
 .projectPanel {
     position: relative;
     width: 400px;
